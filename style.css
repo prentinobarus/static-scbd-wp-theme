@@ -1,0 +1,282 @@
+:root{
+    --warnaUtama: #333333;
+    --warnaKedua: #C4C4C4;
+    --warnaAksen: #EE1C25;
+
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+body, html{
+    height: 100%;
+}
+
+
+/* Navbar */
+.navbar-brand img{
+    height: 50px;
+    width: auto;
+}
+
+.navbar-nav a.nav-link{
+    font-weight: 500;
+}
+
+
+/* Big Picture */
+.section-besar{
+    background-image: url("img/bg-landing.png");
+    height: 540px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 120px;
+}
+
+.text-besar h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.text-besar h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--warnaAksen);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* What We Do */
+.wwd {
+    background-color: var(--warnaKedua);
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    margin-top: -100px;
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.25);
+}
+
+.wwd h3{
+    font-weight: 600;
+}
+
+.wwd h3::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--warnaAksen);
+    width: 10%;
+    margin-top: 6px;
+    margin: auto;
+}
+
+.wwd .card-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--warnaAksen);
+}
+
+.wwd p.card-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wwd .card{
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Latest Article */
+.section{
+    margin-top: 87px;
+}
+
+.artikel{
+    margin-bottom: 25px;
+}
+
+.section h3{
+    font-size: 33px;
+    margin-bottom: 30px;
+    
+}
+
+h3.judul-section::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--warnaAksen);
+    width: 10%;
+    margin-top: 6px;
+    margin: auto;
+}
+
+h3.angka{
+    color: var(--warnaKedua);
+}
+
+p.judul-artikel{
+    font-weight: 600;
+    font-size:16px;
+    margin-bottom: 0;
+}
+
+p.info-meta{
+    margin: 0px;
+    font-size: 14px;
+}
+
+/* Recent Pubs */
+.pubs{
+    margin-bottom: 40px;
+}
+
+/* Search */
+.search-form a.btn:hover{
+    background-color: var(--warnaAksen);
+}
+
+/* Footer */
+.footer-section{
+    background-color: var(--warnaUtama);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+}
+
+.footer-section p{
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section .social-icon .btn{
+    border-radius: 100%;
+    background-color: black;
+}
+
+.footer-section .social-icon i.bi{
+    font-size: 12px;
+    color: white;
+}
+
+
+/* DESKTOP BREAKPOINT */
+@media (min-width: 992px) {
+    .navbar-brand img{
+        height: 74px;
+        width: auto;
+    }
+
+    .navbar-nav .nav-link{
+        text-transform: lowercase;
+        font-weight: bold;
+        /* text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5); */
+    }
+
+    .navbar-nav .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 2px solid var(--warnaAksen);
+        width: 50%;
+        margin-bottom: -2px !important;
+        margin: auto;
+    }
+    
+    .section-besar{
+        margin-top: -100px;
+        padding-top: 150px;
+        height: 100%;
+    }
+
+    .text-besar h3{
+        font-weight: 700;
+        font-size: 33px;
+    }
+    
+    .text-besar h1{
+        font-weight: 700;
+        font-size: 62px;
+        color: var(--warnaAksen);
+    }
+
+    .text-besar p{
+        font-size: 20px;
+    }
+
+    .wwd {
+        margin-top: -150px;
+    }
+
+    .wwd .card{
+        height: 341px;
+        margin-top: 25px;
+        position: relative;
+    }
+    
+    .wwd p.card-text{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -1%
+    }
+
+    h3.judul-section::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid var(--warnaAksen);
+        width: 10%;
+        margin-top: 6px;
+        margin: 0px !important
+    }
+
+    .pubs p.judul-artikel{
+        font-weight: 600;
+        font-size:20px;
+        margin: px 0 ;
+    }
+
+    .search-form input[type="text"]{
+        font-size: 13px; 
+        height: 100%;
+    }
+
+    .search-form a.btn{
+        font-size: 12px;
+    }
+
+    .footer-section p{
+        color: white;
+        font-size: 20px;
+    }
+
+    .social-icon a.twitter-icon:hover{
+        background-color: #1DA1F2 !important;
+    }
+
+    .social-icon a.linkedin-icon:hover{
+        background-color: #0077B5 !important;
+    }
+
+    .social-icon a.fb-icon:hover{
+        background-color: #3b5998 !important;
+    }
+
+    .social-icon a.git-icon:hover{
+        background-color: #4183C4 !important;
+    }
+
+    .social-icon a.ig-icon:hover{
+        background-color: #C13584 !important;
+    }
+
+    .social-icon a.mail-icon:hover{
+        background-color: #DB4437 !important;
+    }
+    
+}
