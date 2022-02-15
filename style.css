@@ -33,7 +33,7 @@ body, html{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .text-besar h3{
@@ -48,13 +48,25 @@ body, html{
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Pubs-Section */
+.pubs-hero{
+    background-image: url("img/library.png");
+    height: 540px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 80px;
+}
+
+
+
 /* What We Do */
 .wwd {
     background-color: var(--warnaKedua);
     padding-top: 20px ;
     padding-bottom: 20px;
     border-radius: 15px;
-    margin-top: -100px;
+    margin-top: -170px;
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -200,6 +212,8 @@ p.konten-excerpt{
 
 
 
+
+
 /* DESKTOP BREAKPOINT */
 @media (min-width: 992px) {
     .navbar-brand img{
@@ -222,7 +236,7 @@ p.konten-excerpt{
         margin: auto;
     }
     
-    .section-besar{
+    .section-besar, .pubs-hero{
         margin-top: -109px;
         padding-top: 150px;
         height: 100%;
@@ -320,5 +334,20 @@ p.konten-excerpt{
     .artikel a.judul-artikel{
         font-size: 24px;
     }
+
+    .pubs-hero{
+        background-image: url("img/library.png");
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     
+    .pubs-list p.info-meta{
+        font-size: 15px;
+    }
+    
+    .pubs-list a.judul-artikel{
+        font-size: 30px;
+    }
 }
