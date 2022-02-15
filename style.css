@@ -101,7 +101,6 @@ body, html{
 .section h3{
     font-size: 33px;
     margin-bottom: 30px;
-    
 }
 
 h3.judul-section::after{
@@ -117,11 +116,25 @@ h3.angka{
     color: var(--warnaKedua);
 }
 
-
-.artikel-latest p.judul-artikel{
+a.judul-artikel{
     font-weight: 700;
-    font-size:16px;
     margin-bottom: 0;
+    color: var(--warnaUtama);
+    text-decoration: none;
+    transition: color 0.2s linear 0s;
+}
+
+a.judul-artikel:hover{
+    color: var(--warnaAksen);
+    
+}
+
+.artikel-latest a.judul-artikel{
+    font-size:16px;
+}
+
+.artikel a.judul-artikel{
+    font-size:20px;
 }
 
 p.info-meta{
@@ -134,11 +147,23 @@ p.konten-excerpt{
     font-weight: 400;
 }
 
-p.judul-artikel{
-    font-weight: 700;
-    font-size:20px;
-    margin-bottom: 0;
+/* Single Post */
+.single-post p.info-meta{
+    font-size: 20px;
+    font-weight: 600;
 }
+
+.single-post p.judul-artikel{
+    font-size: 48px;
+    margin: 0px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.single-post p.konten-excerpt{
+    font-size: 18px;
+}
+
 
 /* Recent Pubs */
 .pubs{
@@ -229,14 +254,14 @@ p.judul-artikel{
     }
     
     .wwd p.card-text{
-    font-size: 14px;
-    font-weight: 400;
-    margin: 10px;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: -1%
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: -1%
     }
 
     h3.judul-section::after{
@@ -248,7 +273,7 @@ p.judul-artikel{
         margin: 0px !important
     }
 
-    .pubs p.judul-artikel{
+    .pubs a.judul-artikel{
         font-weight: 700;
         font-size:20px;
         margin: px 0 ;
@@ -292,8 +317,8 @@ p.judul-artikel{
         background-color: #DB4437 !important;
     }
 
-    .artikel p.judul-artikel{
-        font-size: 22px;
+    .artikel a.judul-artikel{
+        font-size: 24px;
     }
     
 }
