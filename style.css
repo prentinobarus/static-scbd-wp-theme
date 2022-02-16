@@ -2,6 +2,7 @@
     --warnaUtama: #333333;
     --warnaKedua: #C4C4C4;
     --warnaAksen: #EE1C25;
+    --metaInfo : #A9A9A9;
 
 }
 
@@ -55,7 +56,17 @@ body, html{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 80px;
+    padding-top: 50px;
+}
+
+.pubs-list p.info-meta{
+    font-size: 15px;
+    color: var(--metaInfo);
+    margin: 0px;
+}
+
+.pubs-list a.judul-artikel{
+    font-size: 20px;
 }
 
 
@@ -161,19 +172,27 @@ p.konten-excerpt{
 
 /* Single Post */
 .single-post p.info-meta{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--metaInfo);
 }
 
 .single-post p.judul-artikel{
-    font-size: 48px;
+    font-size: 24px;
     margin: 0px;
     font-weight: 700;
-    line-height: 50px;
 }
 
 .single-post p.konten-excerpt{
-    font-size: 18px;
+    font-size: 16px;
+}
+
+#desc-title{
+    font-weight: 700;
+}
+
+.deskripsi p{
+    font-size: 16px;
 }
 
 
@@ -209,9 +228,6 @@ p.konten-excerpt{
     font-size: 12px;
     color: white;
 }
-
-
-
 
 
 /* DESKTOP BREAKPOINT */
@@ -337,7 +353,7 @@ p.konten-excerpt{
 
     .pubs-hero{
         background-image: url("img/library.png");
-        height: 400px;
+        height: 450px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -349,5 +365,24 @@ p.konten-excerpt{
     
     .pubs-list a.judul-artikel{
         font-size: 30px;
+        line-height: 30px;
+        margin: 0px;
+    }
+
+    .single-post p.info-meta{
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--metaInfo);
+    }
+    
+    .single-post p.konten-excerpt{
+        font-size: 18px;
+    }
+    
+    .single-post p.judul-artikel{
+        font-size: 48px;
+        margin: 0px;
+        font-weight: 700;
+        line-height: 50px;
     }
 }
