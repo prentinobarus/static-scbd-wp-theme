@@ -234,7 +234,7 @@ p.konten-excerpt{
     font-weight: 700;
 }
 
-.event-list .event-info{
+.event-list .event-info, .single-event .event-info{
     margin: 0;
     font-size: 14px;
 }
@@ -245,7 +245,7 @@ p.konten-excerpt{
     height: 520px;
 }
 
-.event-list i.bi{
+.event-list i.bi, .single-event i.bi{
     color: var(--metaInfo);
 }
 
@@ -264,8 +264,28 @@ p.konten-excerpt{
 
 .event-list a.judul-event:hover{
     color: var(--warnaAksen);
-    
 }
+
+.event-list a.btn.btn-danger{
+    width: 100%;
+}
+
+.single-event p.judul-event{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.single-event .card-text{
+    font-size: 16px;
+}
+
+.event-detail a.btn{
+    width: 100%;
+    font-size: 18px;
+}
+
+
 
 /* DESKTOP BREAKPOINT */
 @media (min-width: 992px) {
@@ -427,5 +447,9 @@ p.konten-excerpt{
         border-color: var(--warnaUtama) !important;
         border-width: 1px;
         height: 580px;
+    }
+
+    .single-event p.judul-event{
+        font-size: 30px;
     }
 }
