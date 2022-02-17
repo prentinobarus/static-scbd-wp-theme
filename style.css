@@ -229,6 +229,43 @@ p.konten-excerpt{
     color: white;
 }
 
+/* Event Section */
+.event-list .card-title{
+    font-weight: 700;
+}
+
+.event-list .event-info{
+    margin: 0;
+    font-size: 14px;
+}
+
+.event-list .card{
+    border-color: var(--warnaUtama) !important;
+    border-width: 1px;
+    height: 520px;
+}
+
+.event-list i.bi{
+    color: var(--metaInfo);
+}
+
+.event-list a.judul-event{
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--warnaUtama);
+    text-decoration: none;
+    transition: color 0.2s linear 0s;
+    font-size: 16px;
+}
+
+.event-list p.card-text{
+    font-size: 14px;
+}
+
+.event-list a.judul-event:hover{
+    color: var(--warnaAksen);
+    
+}
 
 /* DESKTOP BREAKPOINT */
 @media (min-width: 992px) {
@@ -384,5 +421,11 @@ p.konten-excerpt{
         margin: 0px;
         font-weight: 700;
         line-height: 50px;
+    }
+
+    .event-list .card{
+        border-color: var(--warnaUtama) !important;
+        border-width: 1px;
+        height: 580px;
     }
 }
