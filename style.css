@@ -242,7 +242,7 @@ p.konten-excerpt{
 .event-list .card{
     border-color: var(--warnaUtama) !important;
     border-width: 1px;
-    height: 520px;
+    height: 580px;
 }
 
 .event-list i.bi, .single-event i.bi{
@@ -283,6 +283,15 @@ p.konten-excerpt{
 .event-detail a.btn{
     width: 100%;
     font-size: 18px;
+}
+
+/* TABLET BREAKPOINT */
+@media (min-width: 576px) { 
+    .event-list .card{
+        border-color: var(--warnaUtama) !important;
+        border-width: 1px;
+        height: 600px;
+    }
 }
 
 
